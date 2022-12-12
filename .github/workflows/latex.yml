@@ -10,3 +10,9 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: cv.tex
+          latexmk_use_xelatex: true
+      - name: Upload PDF cv
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: cv.pdf
