@@ -16,7 +16,3 @@ jobs:
         with:
           name: PDF
           path: cv.pdf
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: cv.pdf
